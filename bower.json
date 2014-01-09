@@ -1,0 +1,5 @@
+{
+    "name": "require-output",
+    "version": "0.0.1",
+    "main": "output.js"
+}
