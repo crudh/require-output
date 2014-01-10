@@ -1,23 +1,13 @@
 define(function (require) {
     'use strict';
 
-    var _ = require('underscore');
-
     var output = {
         cleanPath: function (path, outputDir) {
-            if (path.indexOf(outputDir) == 0) {
-                var doFilter = true;
-                return _.filter(path.split('/'), function (segment) {
-                    if (doFilter && segment == outputDir) {
-                        return false;
-                    } else {
-                        doFilter = false;
-                        return true;
-                    }
-                }).join('/');
-            } else {
-                return path;
+            while (path.indexOf(outputDir) == 0) {
+                path = path.substring(outputDir.length + 1)
             }
+
+            return path;
         },
 
         load: function (name, req, onload, config) {
