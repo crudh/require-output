@@ -30,8 +30,8 @@ require.config({
       outputDir: 'compiled'
     }
   },
-  paths : {
-    output: 'components/require-output/output',
+  paths: {
+    output: 'components/require-output/output'
   }
 });
 ```
