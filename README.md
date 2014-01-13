@@ -4,6 +4,12 @@ A simple RequireJS plugin that loads resources from a matching output directory 
 
 This can be used together with, for example, a Grunt watcher plugin that compiles or transforms files on demand to a matching "compiled" directory structure. This way the entire output directory can be git ignored, original files and output files won't be mixed and you can use short relative paths to load your resources, the plugin will handle converting the path to the output directory.
 
+## Installation
+The simplest way to install it is to use bower:
+```
+$ bower install require-output --save-dev
+```
+
 ## Examples
 The examples below are for Facebook React JSX files that are located in src/app/ and are compiled into src/compiled/app.
 
